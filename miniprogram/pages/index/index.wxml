@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <button type="primary" bindtap="tapScanCode">扫码识书</button>
+  </view>
+  <view>{{result.result.title}}</view>
+  <view>
+    <input type="text" :value="num1" bindinput="bindKeyInput1"/>
+    <input type="text" :value="num2" bindinput="bindKeyInput2"/>
+    <button type="primary" bindtap="tapSum">求和</button>
+    <view>{{sum}}</view>
+  </view>
+</view>
